@@ -124,13 +124,13 @@ ssh-copy-id yourusername@100.x.x.x
 Configure Owlfiles (iPhone):
 
 - Add Connection → **SFTP**  
-  - Host: Tailscale IP (e.g., 100.x.x.x)
-  - Port: 22
-  - Username: your Ubuntu user
-  - Auth: SSH key (or password if you haven't disabled password auth)
+  - Host: Tailscale IP (e.g., 100.x.x.x)  
+  - Port: 22  
+  - Username: your Ubuntu user  
+  - Auth: SSH key (or password if you haven't disabled password auth)  
   - Path: /srv/photos
 
-IMPORTANT: When adding a connection in Owlfiles, selecting **SFTP** as the connection type is crucial. Owlfiles offers SMB and WebDAV too, but a plain Ubuntu server running OpenSSH will only accept SFTP. If you pick SMB or WebDAV in Owlfiles without configuring the corresponding server-side services (Samba for SMB, a WebDAV server for WebDAV), the connection will fail on Ubuntu. For this guide, always use SFTP.
+IMPORTANT: When adding a connection in Owlfiles, selecting **SFTP** as the connection type is crucial. Owlfiles offers SMB and WebDAV too, but a plain Ubuntu server running OpenSSH will only accept SFTP.
 
 Upload photos/videos — fast & encrypted.
 
@@ -208,13 +208,28 @@ sudo apt update && sudo apt upgrade -y
 - Speed: 2,000+ files in <5 min via SFTP over Tailscale.
 - Privacy: Full control, no Apple/Google involvement.
 
-<img width="590" height="1278" alt="IMG_3167" src="https://github.com/user-attachments/assets/79bddb43-e947-41d7-abdd-1ecb33f66cd8" />
-<img width="590" height="1278" alt="IMG_3168" src="https://github.com/user-attachments/assets/ee335f2b-edda-4f30-a764-2122835e1f2e" />
-<img width="424" height="808" alt="image" src="https://github.com/user-attachments/assets/16bb4e84-edf6-4d59-b318-6e218b273304" />
-<img width="419" height="746" alt="image" src="https://github.com/user-attachments/assets/d37a22c4-368c-43f1-93eb-a95a4322a382" />
-<img width="590" height="1278" alt="IMG_3171" src="https://github.com/user-attachments/assets/193c7fd9-0582-4034-a462-5ec086e1b65c" />
-<img width="590" height="1278" alt="IMG_3172" src="https://github.com/user-attachments/assets/6410ac9d-c5d7-48c5-9b85-ee8a0ea5aad1" />
-<img width="590" height="1278" alt="IMG_3173" src="https://github.com/user-attachments/assets/285f43e4-b44a-47b2-aa2b-8cea8d40b4fd" />
+For a larger, clickable gallery see: [Screenshots Gallery](SCREENSHOTS.md)
+
+<!-- Compact thumbnail gallery: thumbnails link to full-size images. Use a small width to keep them from dominating the page. -->
+
+<table>
+  <tr>
+    <td><a href="https://github.com/user-attachments/assets/79bddb43-e947-41d7-abdd-1ecb33f66cd8"><img src="https://github.com/user-attachments/assets/79bddb43-e947-41d7-abdd-1ecb33f66cd8" alt="IMG_3167" width="220"/></a></td>
+    <td><a href="https://github.com/user-attachments/assets/ee335f2b-edda-4f30-a764-2122835e1f2e"><img src="https://github.com/user-attachments/assets/ee335f2b-edda-4f30-a764-2122835e1f2e" alt="IMG_3168" width="220"/></a></td>
+    <td><a href="https://github.com/user-attachments/assets/16bb4e84-edf6-4d59-b318-6e218b273304"><img src="https://github.com/user-attachments/assets/16bb4e84-edf6-4d59-b318-6e218b273304" alt="image" width="220"/></a></td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/user-attachments/assets/d37a22c4-368c-43f1-93eb-a95a4322a382"><img src="https://github.com/user-attachments/assets/d37a22c4-368c-43f1-93eb-a95a4322a382" alt="image" width="220"/></a></td>
+    <td><a href="https://github.com/user-attachments/assets/193c7fd9-0582-4034-a462-5ec086e1b65c"><img src="https://github.com/user-attachments/assets/193c7fd9-0582-4034-a462-5ec086e1b65c" alt="IMG_3171" width="220"/></a></td>
+    <td><a href="https://github.com/user-attachments/assets/6410ac9d-c5d7-48c5-9b85-ee8a0ea5aad1"><img src="https://github.com/user-attachments/assets/6410ac9d-c5d7-48c5-9b85-ee8a0ea5aad1" alt="IMG_3172" width="220"/></a></td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/user-attachments/assets/285f43e4-b44a-47b2-aa2b-8cea8d40b4fd"><img src="https://github.com/user-attachments/assets/285f43e4-b44a-47b2-aa2b-8cea8d40b4fd" alt="IMG_3173" width="220"/></a></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+
 
 ## Lessons Learned
 
