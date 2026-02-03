@@ -63,6 +63,8 @@ This solved my photo space issues better than iCloud — faster, private, and go
 
 ## Setup Guide
 
+**Note:** This guide uses SFTP as the primary upload method.
+
 ### 1. Install & Connect Tailscale (All Devices)
 
 On Ubuntu server & Linux laptop:
@@ -121,12 +123,14 @@ ssh-copy-id yourusername@100.x.x.x
 
 Configure Owlfiles (iPhone):
 
-- Add Connection → SFTP
+- Add Connection → **SFTP**  
   - Host: Tailscale IP (e.g., 100.x.x.x)
   - Port: 22
   - Username: your Ubuntu user
   - Auth: SSH key (or password if you haven't disabled password auth)
   - Path: /srv/photos
+
+IMPORTANT: When adding a connection in Owlfiles, selecting **SFTP** as the connection type is crucial. Owlfiles offers SMB and WebDAV too, but a plain Ubuntu server running OpenSSH will only accept SFTP. If you pick SMB or WebDAV in Owlfiles without configuring the corresponding server-side services (Samba for SMB, a WebDAV server for WebDAV), the connection will fail on Ubuntu. For this guide, always use SFTP.
 
 Upload photos/videos — fast & encrypted.
 
