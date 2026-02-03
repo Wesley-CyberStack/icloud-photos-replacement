@@ -1,0 +1,13 @@
+##History of why Im doing this
+
+After years of struggling to backup my iPhone photos, I finally found a solution. 
+The first thing that seemed to actually work for me was an app called EaseMobiMover(or something along those lines). 
+A while back, in 2019, you were able to get away with using it for free. I couldn’t believe how quickly it uploaded my photos. It constantly asked me to subscribe to the full version, but I was able to make it work for free. 
+It blew my mind how much quicker it was than any photo import I had ever done. 3,000+ photos and videos in less than 30 minutes. Crazy. I knew there had to be a better way. Back in 2023, I found Owlfiles. 
+I found out that using Owlfiles, I could connect to my Windows PC’s local folders (once I created a network folder) and upload my files there. WOW, so fast. From there, I wondered if it was possible to set this up remotely. 
+
+
+
+Fast forward to now, I have been playing with VM’s and VPN’s, so that I can access my home lab remotely, and run security test and get real-time alerts. 
+That’s when it clicked. I wonder if this VPN can work in conjunction with Owlfiles. That’s when I decided to build an at home RAID array in compatablity with an ubuntu-linux-server(on an Intel Nuk that I had laying around.)
+Turns out; IT WORKS BETTER THAN I THOUGHT. 2,000+ photos and videos off my iPhone, straight to my “personal, private, home cloud(secured)” in less than FIVE MINUTES.
